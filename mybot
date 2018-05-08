@@ -1,0 +1,19 @@
+//Get discord.js
+const Discord = require('discord.js');
+
+//Create client instance as bot
+const Maid Bamry =new Discord.Client();
+
+//Set listener on 'ready'
+Maid Bamry.on('ready', ()=> {
+console.log('Bamry ready!');
+});
+
+//Set listener on 'message'
+Maid Bamry.on('message', message => { 
+  if (message.content === 'สวัสดีแบมรี่') {
+    message.reply('สวัสดีจ้ามีอะไรหรอ?');
+  }
+});
+
+Maid Bamry.login('NDA5Mzg1MTg2ODU0MzA1Nzky.DdOrFg.ByZnz0zGwSA7rF8Dqn4x2rNT5Gk');
